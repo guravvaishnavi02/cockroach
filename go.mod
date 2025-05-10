@@ -1,6 +1,7 @@
 module github.com/cockroachdb/cockroach
 
 go 1.22.8
+toolchain go1.24.1
 
 // golang.org/x/* packages are maintained and curated by the go project, just
 // without the backwards compatibility promises the standard library, and thus
@@ -10,15 +11,15 @@ go 1.22.8
 // merge of any upgrades we should communicate to all teams to be on the lookout
 // for behavior changes, just like we would after a go upgrade.
 require (
-	golang.org/x/crypto v0.31.0
+	golang.org/x/crypto v0.35.0
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
 	golang.org/x/exp/typeparams v0.0.0-20221208152030-732eee02a75a // indirect
 	golang.org/x/mod v0.20.0 // indirect
 	golang.org/x/net v0.28.0
 	golang.org/x/oauth2 v0.7.0
-	golang.org/x/sync v0.10.0
-	golang.org/x/sys v0.28.0
-	golang.org/x/text v0.21.0
+	golang.org/x/sync v0.11.0
+	golang.org/x/sys v0.30.0
+	golang.org/x/text v0.22.0
 	golang.org/x/time v0.3.0
 	golang.org/x/tools v0.24.0
 )
@@ -251,10 +252,9 @@ require (
 	go.opentelemetry.io/otel/trace v1.17.0
 	go.opentelemetry.io/proto/otlp v0.11.0
 	golang.org/x/perf v0.0.0-20230113213139-801c7ef9e5c5
-	golang.org/x/term v0.27.0
+	golang.org/x/term v0.29.0
 	golang.org/x/tools/go/vcs v0.1.0-deprecated
 	gonum.org/v1/gonum v0.15.1
-	google.golang.org/genproto/googleapis/api v0.0.0-20230525234035-dd9d682886f9
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
 	honnef.co/go/tools v0.4.5
@@ -451,6 +451,7 @@ require (
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	gonum.org/v1/plot v0.14.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20230525234035-dd9d682886f9 // indirect
 	google.golang.org/genproto/googleapis/bytestream v0.0.0-20230525234009-2805bf891e89 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230525234030-28d5490b6b19 // indirect
 	gopkg.in/square/go-jose.v2 v2.5.1 // indirect
